@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Final Project</title>
+    <meta name="title" property="og:title" content="My Final Project" />
+    <meta name="description" property="og:description" content="#" />
+    <meta name="image" property="og:image" content="./assets/images/0WVAUIG2QJ7EKO.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta property="og:type" content="website" />
+    <meta name="url" property="og:url" content="#" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/splide.min.css">
+    <script src="./assets/js/splide.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/js/all.min.js" integrity="sha512-/Hn7mYbBR5AzOJSNR6p80QQDXFIPFKTLMak6/LyKqyCuFQU3zHqZphy8kNKwWS4BA1sDbuZ0VN/IEn3xvinJVw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<div class="star"></div>
+<header>
+    <nav>
+        <a href="#home" class="logo">
+            <img src="./assets/images/logo.svg" alt="logo">
+        </a>
+        <div class="navigation">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#partners" class="nav-item">Our Partners</a>
+            <a href="#co-workers" class="nav-item">Co-Workers</a>
+            <a href="#contact" class="nav-item">Contact Us</a>
+        </div>
+        <a href="#login" class="btn filled">Register</a>
+    </nav>
+    <div class="mob-navigation">
+    <a href="#home" class="logo mob">
+        <img src="./assets/images/logo.svg" alt="logo">
+    </a>
+    <div id="burger-menu">
+        <span></span>
+    </div>
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a href="#home" class="nav-item">Home</a></li>
+            <li><a href="#partners" class="nav-item">Our Partners</a></li>
+            <li><a href="#co-workers" class="nav-item">Co-Workers</a></li>
+            <li><a href="#contact" class="nav-item">Contact Us</a></li>
+        </ul>
+        <a href="#login" class="btn filled">Register</a>
+    </div>
+</header>
+<main>
+    <div class="group1"></div>
+    <section id="home" class="hero-content">
+            <div class="hero-left">
+                <h1 class="title">Tell a better brand story</h1>
+                <p class="text">Warrant present garrets limited cordial in inquiry to. Supported me sweetness behaviour shameless excellent so arranging.</p>
+                <div class="hero-buttons">
+                    <a href="#login" class="btn filled">Get Started</a>
+                    <a href="#contact" class="btn empty"><span class="gradient-text">Contact Us</span></a>
+                </div>
+            </div>
+            <img src="./assets/images/Hero_content.png" alt="content" class="hero-right">
+        </section>
+    <section class="logos-section" id="partners">
+        <img src="./assets/images/planday.svg" alt="logo">
+        <img src="./assets/images/ubraco.svg" alt="logo">
+        <img src="./assets/images/pearlfisher.svg" alt="logo">
+        <img src="./assets/images/brightpearl.svg" alt="logo">
+        <img src="./assets/images/planday.svg" alt="logo">
+    </section>
+    <section class="services splide" id="co-workers" aria-labelledby="carousel-heading">
+        <h1 class="title">Our Co-Workers</h1>
+        <p class="text center">in virtual space through communication platforms. Durable relations that extend beyond immediate genealogical ties.</p>
+        <div class="splide__track">
+        <ul class="cards splide__list" id="card-list">
+        </ul>
+        </div>
+    </section>
+    <section class="login" id="login">
+        <h1 class="title contact">No Account with us? It has never been this easy to join us!</h1>
+        <p class="text">When you have an account with us, you explore more than you can imagine</p>
+        <form action="#" method="post" name="login-form" class="form">
+            <div class="input-wrapper">
+                <label for="email">Enter Your Email<span class="required">*</span>:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" class="form-input" required>
+            </div>
+            <div class="input-wrapper">
+                <label for="password">Password<span class="required">*</span>:</label>
+                <input name="password" type="password" id="password" placeholder="Enter Account Password" class="form-input" required>
+            </div>
+            <button type="submit" class="btn filled">Register</button>
+        </form>
+    </section>
+    <section id="contact" class="contact">
+        <h1 class="title contact">Have a question or inquiry? Feel Free To Contact Us</h1>
+        <form action="#" method="post" name="contact-form" class="form">
+            <div class="input-wrapper">
+                <label for="contact-email">Enter Your Email<span class="required">*</span>:</label>
+                <input type="email" id="contact-email" name="contact-email" placeholder="Enter Your Email" class="form-input" required>
+            </div>
+            <div class="input-wrapper">
+                <label for="contact-text">Write us your Request<span class="required">*</span>:</label>
+                <textarea name="contact-text" rows="3" id="contact-text" placeholder="Type your inquiry" class="form-input" required></textarea>
+            </div>
+            <button type="submit" class="btn filled">Send</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <nav class="footer">
+        <a href="#home" class="logo">
+            <img src="./assets/images/logo.svg" alt="logo">
+        </a>
+        <div class="navigation">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#partners" class="nav-item">Our Partners</a>
+            <a href="#co-workers" class="nav-item">Co-Workers</a>
+            <a href="#contact" class="nav-item">Contact Us</a>
+        </div>
+        <div class="social">
+            <a target="_blank" href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a target="_blank" href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+        </div>
+    </nav>
+    <p>Copyright © Brands.io creative</p>
+</footer>
+</body>
+</html>

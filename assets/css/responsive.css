@@ -1,0 +1,76 @@
+@media only screen and (max-width: 1350px) {
+    .hero-content {
+        flex-direction: column;
+        margin: unset;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    footer nav{
+        flex-direction: column;
+        gap: 20px !important;
+    }
+    header nav{
+        flex-direction: column;
+        gap: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    footer nav{
+        flex-direction: column;
+        gap: 20px !important;
+        padding: 0 15px;
+    }
+    header nav{
+        display: none;
+    }
+    .logo.mob {
+        display: block;
+    }
+    header {
+        justify-content: space-between;
+        background: aliceblue;
+        position: sticky;
+        top: 0;
+        z-index: 3;
+    }
+    .navigation {
+        gap: 20px !important;
+    }
+    section {
+        padding: 0 15px;
+        text-align: center;
+    }
+    .hero-buttons {
+        justify-content: center;
+        align-items: center;
+    }
+    .logos-section {
+        gap: 30px;
+    }
+    .mob-navigation {
+        display: flex;
+    }
+    .form-input {
+        min-width: 250px;
+    }
+    .title {
+        font-size: 60px;
+        line-height: 50px;
+    }
+    .title.contact {
+        font-size: 30px;
+    }
+    .text {
+        font-size: 16px;
+    }
+    label {
+        font-size: 14px;
+    }
+    .login {
+        margin-top: 50px;
+    }
+}
