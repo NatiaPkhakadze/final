@@ -1,4 +1,7 @@
+'use strict';
+
 document.addEventListener('DOMContentLoaded', async function () {
+    // Initialize slider
     var slider = new Splide('.splide', {
         type: 'loop',
         perPage: 4,
@@ -6,7 +9,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         pagination: false,
         arrows: false
     });
-    var getUsers = function () {
+    // Fetch users list and render in DOM
+    function getUsers() {
         var users;
         const sliderList = document.getElementById('card-list')
         // Call the API
@@ -21,9 +25,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             users.forEach(function (user) {
                 sliderList.innerHTML +=
                     '<li class="card-item splide__slide">' +
-                        '<img class="icon" src="'+ user.avatar +'" alt="avatar">' +
-                        '<h2 class="card-title">' + user.first_name + " " + user.last_name + '</h2>' +
-                        '<p class="card-text">' + user.email + '</p>' +
+                    '<img class="icon" src="' + user.avatar + '" alt="avatar">' +
+                    '<h2 class="card-title">' + user.first_name + " " + user.last_name + '</h2>' +
+                    '<p class="card-text">' + user.email + '</p>' +
                     '</li>'
             });
             return slider.mount();
@@ -33,19 +37,14 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     };
     getUsers();
+
     var burgerMenu = document.getElementById('burger-menu');
-    var overlay = document.getElementById('menu');
-    burgerMenu.addEventListener('click',function(){
-        this.classList.toggle("close");
-        overlay.classList.toggle("overlay");
-    });
+    var navigationMenu = document.getElementById('navigation');
+    burgerMenu.addEventListener('click', toggleBurgerMenu);
 
-    const navItems = document.querySelectorAll('.nav-item, .filled');
-
-    navItems.forEach(box => {
-        box.addEventListener('click', function handleClick(event) {
-            burgerMenu.classList.remove("close");
-            overlay.classList.remove("overlay");
-        });
-    });
+    // Toggle burger menu
+    function toggleBurgerMenu() {
+        burgerMenu.classList.toggle('close');
+        navigationMenu.classList.toggle('active');
+    }
 });
