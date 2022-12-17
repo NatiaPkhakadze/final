@@ -1,99 +1,121 @@
+@media only screen and (min-width: 1350px) {
+    .navigation-block .navigation {
+        margin-right: 15px;
+    }
+}
+
 @media only screen and (max-width: 1350px) {
     .hero-content {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         margin: unset;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
 }
 
 @media only screen and (max-width: 980px) {
-    footer nav{
+    footer nav {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         gap: 20px !important;
     }
 }
 
 @media only screen and (max-width: 780px) {
-    footer nav{
+    footer nav {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         gap: 20px !important;
         padding: 0 15px;
     }
+
     .logo.mob {
         display: block;
     }
+
     header {
         -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
         background: aliceblue;
         position: sticky;
         top: 0;
         z-index: 3;
     }
+
     header nav {
         padding: 10px;
         margin: 0;
     }
+
     .navigation {
         gap: 20px !important;
     }
+
     section {
         padding: 0 15px;
         text-align: center;
     }
+
     .hero-buttons {
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
+
     .logos-section {
         gap: 30px;
     }
+
     .mob-navigation {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
     }
+
     .form-input {
         min-width: 250px;
     }
+
     .title {
         font-size: 60px;
         line-height: 50px;
     }
+
     .title.contact {
         font-size: 30px;
     }
+
     .text {
         font-size: 16px;
     }
+
     label {
         font-size: 14px;
     }
+
     .login {
         margin-top: 50px;
     }
+
     #burger-menu {
         display: block;
     }
+
     .navigation-block {
         position: fixed;
         top: 0%;
@@ -108,24 +130,24 @@
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         -webkit-transform: translateY(-100%);
-            -ms-transform: translateY(-100%);
-                transform: translateY(-100%);
-        background-color: rgba(0,0,0,0.5);
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     .navigation-block.active {
-       -webkit-transform: translateY(0);
-           -ms-transform: translateY(0);
-               transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
     }
 
     .navigation-block .navigation {
@@ -134,8 +156,8 @@
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         margin-bottom: 10px;
     }
 

@@ -47,4 +47,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         burgerMenu.classList.toggle('close');
         navigationMenu.classList.toggle('active');
     }
+
+
+    // Initialize form validation
+    
 });

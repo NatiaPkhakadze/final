@@ -21,6 +21,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/js/all.min.js"
         integrity="sha512-/Hn7mYbBR5AzOJSNR6p80QQDXFIPFKTLMak6/LyKqyCuFQU3zHqZphy8kNKwWS4BA1sDbuZ0VN/IEn3xvinJVw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.6.2,npm/parsleyjs@2.9.2"></script>
+    <link rel="stylesheet" href="https://parsleyjs.org/src/parsley.css"/>
 </head>
 
 <body>
@@ -78,32 +80,32 @@
         <section class="login" id="login">
             <h2 class="title contact">No Account with us? It has never been this easy to join us!</h2>
             <p class="text">When you have an account with us, you explore more than you can imagine</p>
-            <form action="#" method="post" name="login-form" class="form">
+            <form action="#" method="post" name="login-form" class="form" data-parsley-validate>
                 <div class="input-wrapper">
                     <label for="email">Enter Your Email<span class="required">*</span>:</label>
                     <input type="email" id="email" name="email" placeholder="Enter Your Email" class="form-input"
-                        required>
+                        data-parsley-required data-parsley-type="email">
                 </div>
                 <div class="input-wrapper">
                     <label for="password">Password<span class="required">*</span>:</label>
                     <input name="password" type="password" id="password" placeholder="Enter Account Password"
-                        class="form-input" required>
+                        class="form-input" data-parsley-required>
                 </div>
                 <button type="submit" class="btn filled">Register</button>
             </form>
         </section>
         <section id="contact" class="contact">
             <h2 class="title contact">Have a question or inquiry? Feel Free To Contact Us</h2>
-            <form action="#" method="post" name="contact-form" class="form">
+            <form action="#" method="post" name="contact-form" id="contact-form" class="form" data-parsley-validate>
                 <div class="input-wrapper">
                     <label for="contact-email">Enter Your Email<span class="required">*</span>:</label>
-                    <input type="email" id="contact-email" name="contact-email" placeholder="Enter Your Email"
-                        class="form-input" required>
+                    <input type="email" id="contact-email" name="email" placeholder="Enter Your Email"
+                        class="form-input" data-parsley-required data-parsley-type="email">
                 </div>
                 <div class="input-wrapper">
                     <label for="contact-text">Write us your Request<span class="required">*</span>:</label>
-                    <textarea name="contact-text" rows="3" id="contact-text" placeholder="Type your inquiry"
-                        class="form-input" required></textarea>
+                    <textarea name="message" rows="3" id="contact-text" placeholder="Type your inquiry"
+                        class="form-input" data-parsley-required></textarea>
                 </div>
                 <button type="submit" class="btn filled">Send</button>
             </form>
